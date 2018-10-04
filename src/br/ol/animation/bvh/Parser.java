@@ -42,7 +42,7 @@ public class Parser {
         if (!line.startsWith(token)) {
             throw new RuntimeException("Expected '" + token + "' token !");
         }
-        String[] tokens = line.split("\\ ");
+        String[] tokens = line.split("\\s+");
         nextLine();
         return tokens;
     }
